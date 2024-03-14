@@ -5,13 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { IdeaCitaComponent } from './idea-cita/idea-cita.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IdeaCitaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSlideToggleModule
   ],
   providers: [
     provideClientHydration(),
