@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
+
 import { IdeaCitaComponent } from './idea-cita/idea-cita.component';
 
 @NgModule({
@@ -16,7 +18,8 @@ import { IdeaCitaComponent } from './idea-cita/idea-cita.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatButtonModule
   ],
   providers: [
     provideClientHydration(),
